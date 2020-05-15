@@ -47,8 +47,6 @@ barChart.updateOptions = <Options>(options: Options | any, props: UpdateScales):
     .domain(labels)
     .range([0, width]);
 
-  console.log(options.width.bandwidth());
-
   options.height
     .domain(extent(values))
     .nice()

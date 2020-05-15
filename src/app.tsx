@@ -15,8 +15,6 @@ const App = () => {
 
   React.useEffect(() => {
     setTimeout(() => {
-      console.log('reload');
-
       setData(mock());
     }, 5000);
   });
