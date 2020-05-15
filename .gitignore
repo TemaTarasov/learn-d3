@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.idea
+.vs_code
+
+**/.DS_Store
+
+*.log
+
+*.lock
+*-lock.json

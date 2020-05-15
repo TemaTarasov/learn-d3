@@ -1,0 +1,9 @@
+{
+  "short_name": "Learn D3",
+  "name": "Learn D3",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
