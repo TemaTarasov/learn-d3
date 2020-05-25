@@ -150,11 +150,8 @@ export default class extends React.Component<Props> {
     const { width, height } = this.container.getBoundingClientRect();
 
     if (width !== this.width || height !== this.height) {
-      this.width = width;
-      this.height = height;
-
-      this.svg.style.width = width;
-      this.svg.style.height = height;
+      this.svg.style.width = this.width = width;
+      this.svg.style.height = this.height = height;
 
       shouldUpdate = true;
     }
