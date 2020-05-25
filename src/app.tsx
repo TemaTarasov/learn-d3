@@ -1,10 +1,11 @@
 import React from 'react';
 
 import uniqid from 'uniqid';
+import dayjs from 'dayjs';
 
-import Chart from './components/chart';
+import Chart from './components/chart-generator';
 
-const mock = () => new Array(12)
+const mock = () => new Array(Math.floor(Math.random() * 100))
   .fill(0)
   .map(() => (
     { label: uniqid(), value: Math.floor(Math.random() * 1000) }
@@ -15,12 +16,14 @@ const App = () => {
 
   React.useEffect(() => {
     setTimeout(() => {
+      console.log('update:', dayjs().format('LTS'));
+
       setData(mock());
     }, 5000);
   });
 
   return (
-    <Chart data={data} />
+    <Chart data={data} type="barchart" />
   );
 };
 
